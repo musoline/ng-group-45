@@ -1,0 +1,16 @@
+ul{
+    display: flex;
+    justify-content: space-between;
+    li{
+        list-style-type: none;
+        a{
+            padding: 10px;
+            background-color: black;
+            text-decoration: none;
+            color: white;
+            span{
+                color: Red;
+            }
+        }
+    }
+}
