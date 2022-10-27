@@ -7,13 +7,23 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app-starter';
-
+  list: string[];
   links = [
     {link:"/",name:"Home"},
     {link:"/about",name:"About"},
     {link:"/news",name:"News"},
     {link:"/test",name:"Test"},
-  ]
+  ];
 
+  constructor(){
+    this.list = TEST;
+  }
 
 }
+
+
+
+
+const TEST = [
+  "asdas","asdasd","asdasd"
+]

@@ -1,0 +1,14 @@
+<nav>
+    <ul>
+        <!-- <li *ngFor="let navItem of navList"><a href="{{navItem.link}}">{{navItem.name}}</a></li> -->
+        <app-link *ngFor="let navItem of navList" [name]="navItem.name" [link]="navItem.link" ></app-link>
+    </ul>
+</nav>
+
+
+<!-- <ul>
+    <li><a routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page">Home</a></li>
+    <li><a routerLink="/news" routerLinkActive="active" ariaCurrentWhenActive="page">News</a></li>
+    <li><a routerLink="/about" routerLinkActive="active" ariaCurrentWhenActive="page">About</a></li>
+    <li><a routerLink="/test" routerLinkActive="active" ariaCurrentWhenActive="page">Test</a></li>
+  </ul> -->

@@ -1,12 +1,2 @@
-
-<ul>
-
-  <app-link *ngFor="let link of links"  [link]="link.link"  [name]="link.name"></app-link>
-
-  <!-- <app-link [link]="'/'"  [name]="'home'"></app-link>
-  <app-link [link]="'/news'"  [name]="'News'"></app-link>
-  <app-link [link]="'/about'"  [name]="'About'"></app-link> -->
-</ul>
-
-
-<app-login-form></app-login-form>
+<app-nav></app-nav>
+<router-outlet></router-outlet>
