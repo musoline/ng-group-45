@@ -1,5 +1,6 @@
 li{
     padding: 20px 30px;
+    border-radius: 10px;
     a{
         text-decoration: none;
         color: black;
@@ -12,7 +13,7 @@ li{
     &:hover{
         background-color: green;
         a{
-            color: red;
+            color: white;
         }
     }
 }
