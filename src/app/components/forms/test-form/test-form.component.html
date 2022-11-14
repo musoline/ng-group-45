@@ -1,0 +1,30 @@
+<!-- <form [formGroup]="testForm"  (ngSubmit) = "logValues()">
+  <label for="first-name">First Name: </label>
+  <input id="first-name" type="text" formControlName="test1" />
+
+  <label for="last-name">Last Name: </label>
+  <input id="last-name" type="text" formControlName="test2" />
+
+  <input type="submit" value="Submit">
+</form> -->
+
+
+
+<div class="form">
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" name="firstName" [(ngModel)]="person.firstName" placeholder="Enter Name...">
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" name="lastName" [(ngModel)]="person.lastName" placeholder="Enter Surname...">
+    <label for="age">Age:</label>
+    <input type="text" id="age" name="age" [(ngModel)]="person.age" placeholder="Enter Age...">
+    <!-- <input type="text" name="email" [(ngModel)]="person.email" > -->
+    <!-- <input type="text" name="position" [(ngModel)]="person.position" > -->
+    <button (click)="savePerson()">Save Person</button>
+</div>
+
+<!-- 
+<input type="text" name="status" id="status" [(ngModel)]="status">
+
+<input type="button" value="Change" (click)="changeStatusToNone()">
+
+{{status}} -->

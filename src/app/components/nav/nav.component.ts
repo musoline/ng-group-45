@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,Input,OnInit } from '@angular/core';
 import { ENavLink, ENavNames } from 'src/app/enum/ENavData';
 import { UNavLink } from 'src/app/utils/UNavData';
 
@@ -8,6 +8,9 @@ import { UNavLink } from 'src/app/utils/UNavData';
   styleUrls: ['./nav.component.scss'],
 })
 export class NavComponent {
+
+  @Input() data!:string;
+
   title = 'app-nav';
   navList = [
     { link: UNavLink(ENavLink.HOME), name: ENavNames.HOME },
@@ -16,6 +19,8 @@ export class NavComponent {
     { link: UNavLink(ENavLink.TEST), name: ENavNames.TEST },
   ];
 
-
+  ngOnInit(){
+    console.log("dasdasd",this.data,"asdasdas")
+  }
 
 }

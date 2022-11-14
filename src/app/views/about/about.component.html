@@ -1,1 +1,23 @@
-<p>{{title}} works!</p>
+<p>{{ title }} works!</p>
+
+<button (click)="toggleText()">Click</button>
+
+<p *ngIf="isAbout, else elseBlock">{{aboutText}}</p>
+<ng-template #elseBlock><p>Condition is False!!!</p></ng-template>
+
+<p [ngClass]="{ red: isClass }">{{ aboutText }}</p>
+
+<div *ngIf="isAbout; then thenBlock else elseBlock"></div>
+<ng-template #thenBlock>{{aboutText}}</ng-template>
+<ng-template #elseBlock>Content to render when condition is false.</ng-template>
+
+<container-element [ngSwitch]="aboutClass">
+  <!-- the same view can be shown in more than one case -->
+  <p *ngSwitchCase="'red'">გადახდა უარყოფილია</p>
+  <p *ngSwitchCase="'blue'">გადახდა მუშავდება</p>
+  <p *ngSwitchCase="'green'">გადახდილია</p>
+  <!--default case when there are no matches -->
+  <p *ngSwitchDefault>გაურკვეველია მდგომარეობა</p>
+</container-element>
+
+<app-test-form (mouseenter)="test('enter')" (mouseout)="test('out')" (clicked)="test($event)"></app-test-form>
