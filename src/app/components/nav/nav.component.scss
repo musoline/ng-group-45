@@ -1,16 +1,19 @@
 nav{
-    width: 900px;
-    margin: 0 auto;
-    height: 150px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    width: 200px;
     ul{
         width: 100%;
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
         align-items: center;
         list-style: none;
-
+        
+        app-link{
+            width: 100%;
+            padding: 10px;
+        }
     }
 }
